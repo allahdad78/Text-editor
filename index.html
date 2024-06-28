@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="editor-container">
+
+        <div class="toolbar">
+            <h1>Text Editor using Javscriwhpt</h1>
+
+            <button onclick="commint('bold')"><b><i class="fa fa-bold" aria-hidden="true"></i></b></button>
+            <button onclick="commint('italic')"><i><i class="fa fa-italic" aria-hidden="true"></i></i></button>
+            <button onclick="commint('underline')"><u><i class="fa fa-underline" aria-hidden="true"></i></u></button>
+            <button onclick="commint('justifyLeft')"><i class="fa fa-align-left" aria-hidden="true"></i></button>
+            <button onclick="commint('justifyCenter')"><i class="fa fa-align-center" aria-hidden="true"></i></button>
+            <button onclick="commint('justifyRight')"><i class="fa fa-align-right" aria-hidden="true"></i></button>
+            <button onclick="commint('insertOrderedList')"><i class="fa fa-list-ol" aria-hidden="true"></i></button>
+            <button onclick="commint('insertUnorderedList')"><i class="fa fa-list-ul" aria-hidden="true"></i></button>
+        </div>
+        <div id="editor" contenteditable="true" class="editor">...</div>
+    </div>
+    <script> function commint(call) {
+        document.execCommand(call, false, null);
+    }
+    </script>
+</body>
+</html>

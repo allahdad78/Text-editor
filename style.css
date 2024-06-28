@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.editor-container {
+    width: 80%;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.toolbar button {
+    margin: 0 5px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.toolbar button:hover {
+    background-color: #eee;
+}
+
+.editor {
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+    outline: none;
+}
